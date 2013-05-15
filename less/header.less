@@ -1,0 +1,21 @@
+header {
+	height:@headerHeight;
+	background-color: @headerColor;
+	.rounded(15px);
+	
+	h1{
+		position:relative;
+		top:20px;
+		left:30px;
+	}
+}
+
+@media only screen and (max-device-width : @smallSmartPhone), 
+only screen and (max-width : @smallSmartPhone){
+	header{
+		height: 100px;
+	}
+	h1{
+		display:none;
+	}
+}
